@@ -1,4 +1,4 @@
-// Operators, Division with longs, demonstrating floating-point imprecision
+// Operators, Division with longs, demonstrating double for more precision
 
 #include "cs50.h"
 #include <stdio.h>
@@ -12,6 +12,6 @@ int main(void)
     long y = get_long("Set the y: ");
 
     // Divide x by y
-    float z = (float) x / (float) y;
+    double z = (double) x / (double) y;
     printf("%.20f\n", z);
 }
