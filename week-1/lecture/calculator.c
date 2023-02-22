@@ -1,11 +1,16 @@
-// Operators, Addition with long
+// Operators, Division with longs, demonstrating truncation
 
 #include "cs50.h"
 #include <stdio.h>
 
 int main(void)
 {
+    // Prompt user for x
     long x = get_long("Set the x: ");
+
+    // Prompt user for y
     long y = get_long("Set the y: ");
-    printf("The sum between x and y is: %li\n", x + y);
+
+    // Divide x by y
+    printf("%li\n", x / y);
 }
