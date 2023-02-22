@@ -1,4 +1,4 @@
-// Operators, Division with longs, demonstrating type casting
+// Operators, Division with longs, demonstrating floating-point imprecision
 
 #include "cs50.h"
 #include <stdio.h>
@@ -13,5 +13,5 @@ int main(void)
 
     // Divide x by y
     float z = (float) x / (float) y;
-    printf("%f\n", z);
+    printf("%.20f\n", z);
 }
