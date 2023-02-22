@@ -1,4 +1,4 @@
-// Operators, Division with longs and floating format, demonstrating truncation
+// Operators, Division with longs, floating format and variable float z, demonstrating truncation
 
 #include "cs50.h"
 #include <stdio.h>
@@ -12,5 +12,6 @@ int main(void)
     long y = get_long("Set the y: ");
 
     // Divide x by y
-    printf("%f\n", x / y);
+    float z = x /y;
+    printf("%f\n", z);
 }
