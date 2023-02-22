@@ -1,19 +1,19 @@
-// Loops, Abstraction, Better design with for
+// Loops, Abstraction with parameterization, Better design with for
 
 #include <stdio.h>
 
-void meow(void);
+void meow(int n);
 
 int main(void)
 {
-    for (int i = 0; i < 3; i++)
-    {
-        meow();
-    }
+    meow(3);
 }
 
 // Meow Once
-void meow(void)
+void meow(int n)
 {
-    printf("meow\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("meow\n");
+    }
 }
